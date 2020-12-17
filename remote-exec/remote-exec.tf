@@ -40,6 +40,8 @@ resource "aws_security_group" "prodsg" {
   }
 }
 
+// null resource is only created for the remote-exec
+
 resource "null_resource" "null" {
   triggers = {
     public_ip = aws_instance.firstins.public_ip
