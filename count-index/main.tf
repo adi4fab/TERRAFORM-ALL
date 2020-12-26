@@ -15,7 +15,7 @@ resource "aws_instance" "myins" {
 
 variable "insname" {
   type = list
-  default = ["insatnceadi","instanceorem"]
+  default = ["insatnceadii","instanceorem"]
 }
 
 #resource "aws_iam_user" "lb" {
